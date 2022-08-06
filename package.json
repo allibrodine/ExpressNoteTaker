@@ -1,0 +1,23 @@
+{
+  "name": "expressnotetaker",
+  "version": "1.0.0",
+  "description": "note taking application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allibrodine/ExpressNoteTaker.git"
+  },
+  "author": "Alli Brodine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allibrodine/ExpressNoteTaker/issues"
+  },
+  "homepage": "https://github.com/allibrodine/ExpressNoteTaker#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
