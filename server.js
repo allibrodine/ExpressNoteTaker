@@ -1,10 +1,10 @@
-//dependencies
+//set up Express.js
 const express = require('express');
 const app = express();
-const fs = require('fs');
 
 //server
 const PORT = process.env.PORT || 3008;
+//link to routes
 const htmlRoutes = require('./Develop/Routes/htmlRoutes');
 const apiRoutes = require('./Develop/Routes/apiRoutes');
 
