@@ -17,7 +17,7 @@ Keep all of your notes in one place with this easy-to-use note taking app. Creat
 
 ## Usage
 
-Follow this <a href="">link</a> to use the application.
+Follow this <a href="https://alli-expressnotetaker.herokuapp.com/">link</a> to use the application.
 
 ## Screenshot
 
@@ -25,7 +25,7 @@ Follow this <a href="">link</a> to use the application.
 
 ## Collaboration
 
-Attended Office Hours and completed the assignment with the help of a TA.
+Attended Office Hours and completed the assignment with the help of a TA. Also used AskBCS Learning Assistant for a Heroku issue.
 
 ## License 
 
