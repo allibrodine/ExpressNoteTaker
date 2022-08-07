@@ -15,16 +15,9 @@ Keep all of your notes in one place with this easy-to-use note taking app. Creat
     * Express.js
     * Heroku
 
-## Installation
-
-* Clone this repository to your machine. 
-* Download and Install <a href = "https://coding-boot-camp.github.io/full-stack/nodejs/how-to-install-nodejs">Node.js</a> if you don't have it already. Choose the LTS, Long Term Support, version.  
-* Run "npm install" from the command line
-* Run "npm i express" from the command line
-
 ## Usage
 
-To use the app, run "npm start" from the command line and go to localhost:3008 in your browser window. Click on "Get Started" and begin entering your notes.
+Follow this <a href="">link</a> to use the application.
 
 ## Screenshot
 

@@ -1,7 +1,7 @@
 //set path, express and file system
 const app = require('express').Router();
 const fs = require('fs');
-const path = require('');
+const path = require('path');
 
 //read current notes
 app.get('/notes', (req, res) => {

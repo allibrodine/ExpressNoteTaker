@@ -5,14 +5,14 @@ const app = express();
 //server
 const PORT = process.env.PORT || 3008;
 //link to routes
-const htmlRoutes = require('./Develop/Routes/htmlRoutes');
-const apiRoutes = require('./Develop/Routes/apiRoutes');
+const htmlRoutes = require('./Routes/htmlRoutes');
+const apiRoutes = require('./Routes/apiRoutes');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //middleware functions
-app.use(express.static('./Develop/public'));
+app.use(express.static('./public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
