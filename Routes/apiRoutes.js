@@ -5,9 +5,9 @@ const path = require('path');
 
 //read current notes
 app.get('/notes', (req, res) => {
-    let db = JSON.parse(fs.readFileSync('../db/db.json', 'UTF-8'));
+    let read = JSON.parse(fs.readFileSync('./db/db.json', 'UTF-8'));
         //display results
-        res.json(db);
+        res.json(read);
 });
 
 //post request to add a new note
@@ -19,26 +19,26 @@ app.post('/notes', (req, res) => {
         text: req.body.text 
     };
     //add new note to json
-    let db = JSON.parse(fs.readFileSync('../db/db.json', 'UTF-8'));
-        db.push(notes);
+    let read = JSON.parse(fs.readFileSync('./db/db.json', 'UTF-8'));
+        read.push(notes);
     
     //write file with new note
-    fs.writeFile('../db/db.json', JSON.stringify(db), function(err, res) {
+    fs.writeFile('./db/db.json', JSON.stringify(read), function(err, res) {
         if (err) {
             throw err
         } 
 
     }) 
     //display results
-    res.json(db);
+    res.json(read);
 });
 
 //selects note by ID and displays it
 app.get('/notes/:id', (req, res) => {
     //reads file
-    let db = JSON.parse(fs.readFileSync('../db/db.json', 'UTF-8'));
+    let read = JSON.parse(fs.readFileSync('./db/db.json', 'UTF-8'));
     //select note by ID with filter method
-    let result = db.filter(note => note.id === req.params.id)
+    let result = read.filter(note => note.id === req.params.id)
     if (result) {
         //display selected note
         res.json(result);
@@ -49,11 +49,11 @@ app.get('/notes/:id', (req, res) => {
 
 //selects note by ID to delete it
 app.delete('/notes/:id', (req, res) => {
-    let db = JSON.parse(fs.readFileSync('../db/db.json', 'UTF-8'));
+    let read = JSON.parse(fs.readFileSync('./db/db.json', 'UTF-8'));
     //select file to delete
-    let deleteNote = db.filter(note => note.id != req.params.id)
+    let deleteNote = read.filter(note => note.id != req.params.id)
     //write file minus the deleted note
-    fs.writeFile('../db/db.json', JSON.stringify(deleteNote), function(err, res) {
+    fs.writeFile('./db/db.json', JSON.stringify(deleteNote), function(err, res) {
         if (err) {
             throw err
         } 
